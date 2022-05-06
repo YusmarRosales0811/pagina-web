@@ -1,0 +1,225 @@
+/*header*/
+.site-header {
+    background-color: gray;
+    padding: 1rem 0 3rem;
+}
+
+.inicio {
+    background-image: url(../img/fondo.JPG);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenido-header h1 {
+    color: white;
+    padding-bottom: 5rem;
+    max-width: 80rem;
+    line-height: 2;
+}
+
+/*globales*/
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before ::after {
+    box-sizing: inherit;
+}
+
+/*tipo de letra*/
+body {
+    font-family: 'Dancing Script', cursiva;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.4rem
+}
+
+/*utilidad*/
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.contenido-centrado {
+    max-width: 800;
+}
+
+@media(min-width: 700px) {
+    .icono-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.icono {
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.icono h3 {
+    text-transform: uppercase;
+}
+
+.boton {
+    color: aliceblue;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+
+@media(min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-morado {
+    background-color: blueviolet;
+}
+
+.boton-verde {
+    background-color: green;
+}
+
+/*arreglos*/
+@media(min-width: 768px) {
+    .contenedor-arreglos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.arreglo {
+    border: 1px solid gray;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+@media(min-width: 768px) {
+    .arreglo {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+
+.contenido-arreglo {
+    padding: 2rem;
+}
+
+.contenido-arreglo h4,
+.contenido-arreglo p {
+    margin: 0;
+}
+
+.precio {
+    color: indigo;
+    font-weight: 700;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imagen-contacto {
+    background-image: url(../img/contacto.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 48rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto p {
+    font-size: 1.8ren;
+}
+
+/*footer*/
+.site-footer {
+    background: gray;
+    margin: 0;
+}
+
+.contenedor-footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
